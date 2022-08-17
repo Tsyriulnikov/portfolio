@@ -1,28 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from '../assets/img/logo.png'
 import moon from '../assets/img/moon.png'
 
 
 export const Navbar = () => {
-
+    const [isHamburgerActive, setIsHamburgerActive] = useState(false)
 
     const body = document.querySelector("body")
-    const hamburger = document.querySelector("#hamburger")
-    const menu = document.querySelector("#menu")
-    const hLinks = document.querySelectorAll("#hLink")
+    // const hamburger = document.querySelector("#hamburger")
+    // const menu = document.querySelector("#menu")
+    // const hLinks = document.querySelectorAll("#hLink")
 
     const handleHamburgerMenu = () => {
-        menu.classList.toggle("hidden")
-        hamburger.classList.toggle("bg-white")
-        console.log('humburger')
+        setIsHamburgerActive(!isHamburgerActive)
     }
 
-    hLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            menu.classList.toggle("hidden")
-            hamburger.classList.toggle("bg-white")
-        })
-    })
+    // hLinks.forEach(link => {
+    //     link.addEventListener("click", () => {
+    //         // menu.classList.toggle("hidden")
+    //         // hamburger.classList.toggle("bg-white")
+    //     })
+    // })
     const handleTheme = () => {
         body.classList.toggle("dark")
     }
@@ -62,14 +60,18 @@ export const Navbar = () => {
                     alt=""
                     onClick={handleTheme}
                 />
-                <div id="hamburger" className="space-y-1 md:hidden cursor-pointer z-20" onClick={handleHamburgerMenu}>
+                <div id="hamburger"
+                     className={isHamburgerActive ? "bg-white space-y-1 md:hidden cursor-pointer z-20" :
+                         "space-y-1 md:hidden cursor-pointer z-20"}
+                     onClick={handleHamburgerMenu}>
                     <div className="w-6 h-0.5 bg-black"></div>
                     <div className="w-6 h-0.5 bg-black"></div>
                     <div className="w-6 h-0.5 bg-black"></div>
                 </div>
                 <ul
                     id="menu"
-                    className="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+                    className={isHamburgerActive ? "bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center" :
+                        "hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"}
                 >
                     <li>
                         <a id="hLink" href="#">homepage</a>
