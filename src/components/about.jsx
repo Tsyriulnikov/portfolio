@@ -4,7 +4,10 @@ import portrait from '../assets/img/max22_06_221.png'
 
 export const About = () => {
     return (
-
+        <div id="about" className="px-10 dark:bg-slate-900">
+            <div
+                className="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+            >
                 <div className="relative">
                     <img
                         className="h-1/4 absolute top-0 left-0 -z-10"
