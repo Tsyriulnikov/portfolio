@@ -1,13 +1,15 @@
-import './App.css';
-import {Homepage} from "./components/homepage";
-
+import {About} from "./components/about";
+import {Intro} from "./components/intro";
+import React from 'react'
+import {Navbar} from "./components/navbar";
 
 function App() {
-    // const body = document.querySelector("body")
-    // body.classList.toggle("dark")
     return (
-        <div className="App">
-            <Homepage/>
+        // <div className='h-48 max-h-fit bg-amber-600'>
+        <div>
+            {/*<Navbar/>*/}
+            <Intro/>
+            {/*<About/>*/}
         </div>
     );
 }

@@ -3,6 +3,7 @@ import logo from '../assets/img/logo.png'
 import moon from '../assets/img/moon.png'
 
 
+
 export const Navbar = () => {
     const [isHamburgerActive, setIsHamburgerActive] = useState(false)
 
@@ -91,5 +92,6 @@ export const Navbar = () => {
                 </ul>
             </div>
         </nav>
+
     )
 }
