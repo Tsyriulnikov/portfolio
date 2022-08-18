@@ -1,15 +1,23 @@
+import React from 'react'
 import {About} from "./components/about";
 import {Intro} from "./components/intro";
-import React from 'react'
 import {Navbar} from "./components/navbar";
+import {Services} from "./components/services";
+import {Works} from "./components/works";
+import {Contact} from "./components/contact";
+import {Footer} from "./components/footer";
 
 function App() {
     return (
         // <div className='h-48 max-h-fit bg-amber-600'>
-        <div>
-            {/*<Navbar/>*/}
+        <div className='h-screen'>
+            <Navbar/>
             <Intro/>
-            {/*<About/>*/}
+            <About/>
+            <Services/>
+            <Works/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 }

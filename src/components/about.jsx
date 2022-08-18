@@ -1,6 +1,6 @@
 import React from "react";
 import dots from '../assets/img/dots.png'
-import portrait from '../assets/img/max22_06_221.jpg'
+import portrait from '../assets/img/max22_06_221.png'
 
 export const About = () => {
     return (
