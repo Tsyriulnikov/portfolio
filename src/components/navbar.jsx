@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from 'react-scroll';
 import logo from '../assets/img/clipart2703019.png'
 import moon from '../assets/img/moon.png'
 
@@ -32,7 +33,7 @@ export const Navbar = () => {
                     className="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
                 >
                     {menuItem.map(item => <li key={item.id} className="hover:text-gray-500">
-                        <a href={item.href}>{item.item}</a>
+                        <Link to={item.href} smooth={true} duration={500}>{item.item}</Link>
                     </li>)}
                 </ul>
                 <img
@@ -56,7 +57,7 @@ export const Navbar = () => {
                         "hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"}
                 >
                     {menuItem.map(item => <li key={item.id}>
-                        <a id='hLink' href={item.href} onClick={handleHamburgerMenu}>{item.item}</a>
+                        <Link id='hLink' to={item.href} onClick={handleHamburgerMenu}  smooth={true} duration={500}>{item.item}</Link>
                     </li>)}
                 </ul>
             </div>
