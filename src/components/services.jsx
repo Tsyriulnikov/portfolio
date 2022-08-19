@@ -1,7 +1,26 @@
 import React from 'react'
-import icon from '../assets/img/icon.png'
+import HTML from '../assets/img/html.png';
+import CSS from '../assets/img/css.png';
+import JavaScript from '../assets/img/javascript.png';
+import ReactImg from '../assets/img/react.png';
+import Node from '../assets/img/node.png';
+import GitHub from '../assets/img/github.png';
+import Typescript from '../assets/img/ts.png';
+import Vue from '../assets/img/vue.png';
 
 export const Services = () => {
+    const skills = [
+        {id: '1', tech: HTML, Title: 'HTML'},
+        {id: '2', tech: CSS, Title: 'CSS'},
+        {id: '3', tech: JavaScript, Title: 'JAVASCRIPT'},
+        {id: '4', tech: ReactImg, Title: 'REACT.JS'},
+        {id: '5', tech: GitHub, Title: 'GITHUB'},
+        {id: '6', tech: Node, Title: 'NODE JS'},
+        {id: '7', tech: Typescript, Title: 'TYPESCRIPT'},
+        {id: '7', tech: Vue, Title: 'VUE.JS'},
+        {id: '8', tech: ReactImg, Title: 'REACT NATIVE'},
+    ]
+
     return (
         <div id="services" className="dark:bg-slate-900">
             <div className="container mx-auto">
@@ -16,89 +35,23 @@ export const Services = () => {
                 </div>
 
                 <div className="p-5 sm:p-0 flex flex-wrap justify-between">
-                    <div
-                        className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-                    >
-                        <img className="w-10" src={icon} alt=""/>
-                        <h1 className="font-medium text-lg dark:text-white">UX / UI Design</h1>
-                        <p className="text-gray-400">
-                            I specialize in creating interactive websites for individuals and
-                            small businesses.
-                        </p>
-                        <a className="text-indigo-600 font-semibold text-sm" href=""
-                        >Read More</a
-                        >
-                    </div>
+                    {skills.map((item) => {
+                        return (
+                            <div key={item.id}
+                                 className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                                <img className="w-10" src={item.tech} alt="HTML icon"/>
+                                <h1 className="font-medium text-lg dark:text-white">{item.Title}</h1>
+                                <p className="text-gray-400">
+                                    I specialize in creating interactive websites for individuals and
+                                    small businesses.
+                                </p>
+                                <a className="text-indigo-600 font-semibold text-sm" href=""
+                                >Read More</a
+                                >
+                            </div>
+                        )
+                    })}
 
-                    <div
-                        className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-                    >
-                        <img className="w-10" src={icon} alt=""/>
-                        <h1 className="font-medium text-lg dark:text-white">UX / UI Design</h1>
-                        <p className="text-gray-400">
-                            I specialize in creating interactive websites for individuals and
-                            small businesses.
-                        </p>
-                        <a className="text-indigo-600 font-semibold text-sm" href=""
-                        >Read More</a
-                        >
-                    </div>
-
-                    <div
-                        className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-                    >
-                        <img className="w-10" src={icon} alt=""/>
-                        <h1 className="font-medium text-lg dark:text-white">UX / UI Design</h1>
-                        <p className="text-gray-400">
-                            I specialize in creating interactive websites for individuals and
-                            small businesses.
-                        </p>
-                        <a className="text-indigo-600 font-semibold text-sm" href=""
-                        >Read More</a
-                        >
-                    </div>
-
-                    <div
-                        className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-                    >
-                        <img className="w-10" src={icon} alt=""/>
-                        <h1 className="font-medium text-lg dark:text-white">UX / UI Design</h1>
-                        <p className="text-gray-400">
-                            I specialize in creating interactive websites for individuals and
-                            small businesses.
-                        </p>
-                        <a className="text-indigo-600 font-semibold text-sm" href=""
-                        >Read More</a
-                        >
-                    </div>
-
-                    <div
-                        className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-                    >
-                        <img className="w-10" src={icon} alt=""/>
-                        <h1 className="font-medium text-lg dark:text-white">UX / UI Design</h1>
-                        <p className="text-gray-400">
-                            I specialize in creating interactive websites for individuals and
-                            small businesses.
-                        </p>
-                        <a className="text-indigo-600 font-semibold text-sm" href=""
-                        >Read More</a
-                        >
-                    </div>
-
-                    <div
-                        className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-                    >
-                        <img className="w-10" src={icon} alt=""/>
-                        <h1 className="font-medium text-lg dark:text-white">UX / UI Design</h1>
-                        <p className="text-gray-400">
-                            I specialize in creating interactive websites for individuals and
-                            small businesses.
-                        </p>
-                        <a className="text-indigo-600 font-semibold text-sm" href=""
-                        >Read More</a
-                        >
-                    </div>
                 </div>
             </div>
         </div>

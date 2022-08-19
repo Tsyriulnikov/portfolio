@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/clipart2703019.png'
 import moon from '../assets/img/moon.png'
 
 
