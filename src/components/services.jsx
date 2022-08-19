@@ -45,9 +45,6 @@ export const Services = () => {
                                     I specialize in creating interactive websites for individuals and
                                     small businesses.
                                 </p>
-                                <a className="text-indigo-600 font-semibold text-sm" href=""
-                                >Read More</a
-                                >
                             </div>
                         )
                     })}

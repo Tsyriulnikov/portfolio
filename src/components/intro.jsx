@@ -13,15 +13,13 @@ export const Intro = () => {
             />
             <div
                 className="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
-            ></div>
+            > </div>
             <div
-                className="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+                className="hover:animate-spin absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
             >
 
-                <span className="text-gray-600">Front-end</span>
-                <p><span className="text-gray-600">developer</span></p>
-                {/*<p id="text"  className="text-red-500">{animatedText()}</p>*/}
-                <p id="text" className="text-red-500"></p>
+                <span className="text-gray-600 animate-pulse">Front-end</span>
+                <p><span className="text-gray-600 animate-pulse">developer</span></p>
             </div>
 
 
@@ -30,7 +28,8 @@ export const Intro = () => {
             >
                 <h1 className="text-4xl font-bold text-indigo-900"> Greetings, I'm Maksim Tsyriulnikov</h1>
                 <p className="text-gray-400">
-                    I am a front-end developer with experience in creating SPA using React, Redux, TypeScript, JavaScript, SCSS, HTML with future plans to study AngularJS.
+                    I am a front-end developer with experience in creating SPA using React, Redux, TypeScript,
+                    JavaScript, SCSS, HTML with future plans to study AngularJS.
                     I like mobile app development and currently improving my skills
                     in React Native.
                     I spend my spare-time learning English and Spanish.
