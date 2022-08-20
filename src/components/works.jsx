@@ -1,5 +1,6 @@
 import React from 'react'
 import item from '../assets/img/item.png'
+import {WorkCard} from "./WorkCard";
 
 export const Works = () => {
     return (
@@ -18,53 +19,15 @@ export const Works = () => {
 
                 <div className="p-5 sm:p-0 flex flex-wrap justify-between">
 
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
+                    <WorkCard/>
 
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
+                    {/*<div*/}
+                    {/*    className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"*/}
+                    {/*>*/}
+                    {/*    <img src={item} alt={''}/>*/}
+                    {/*</div>*/}
 
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
 
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
-
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
-
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
-
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
-
-                    <div
-                        className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
-                    >
-                        <img src={item}/>
-                    </div>
                 </div>
             </div>
         </div>

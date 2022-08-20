@@ -15,23 +15,27 @@ export const Contact = () => {
                     </p>
                 </div>
 
-                <form className="mt-5 p-8 flex flex-col gap-5 items-center">
+                <form method='POST' action="https://getform.io/f/6e101a99-f1fe-4c6c-9e93-cf708b10e9e8"
+                    className="mt-5 p-8 flex flex-col gap-5 items-center">
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
                         type="text"
                         placeholder="Name Surname"
+                        name='name'
                     />
                     <input
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
                         type="email"
                         placeholder="Email"
+                        name='email'
                     />
                     <textarea
                         className="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
                         cols="30"
                         rows="10"
                         placeholder="Message..."
-                    ></textarea>
+                        name='message'
+                    > </textarea>
                     <button
                         className="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
                     >

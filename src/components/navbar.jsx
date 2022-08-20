@@ -7,11 +7,11 @@ export const Navbar = () => {
     const [isHamburgerActive, setIsHamburgerActive] = useState(false)
     const body = document.querySelector("body")
     const menuItem = [
-        {id: '1', href: '#', item: 'homepage'},
-        {id: '2', href: '#about', item: 'about me'},
-        {id: '3', href: '#services', item: 'services'},
-        {id: '4', href: '#works', item: 'works'},
-        {id: '5', href: '#contact', item: 'contact'},
+        {id: '1', href: 'home', item: 'home'},
+        {id: '2', href: 'about', item: 'about me'},
+        {id: '3', href: 'services', item: 'services'},
+        {id: '4', href: 'works', item: 'works'},
+        {id: '5', href: 'contact', item: 'contact'},
     ]
     const handleHamburgerMenu = () => {
         setIsHamburgerActive(!isHamburgerActive)
