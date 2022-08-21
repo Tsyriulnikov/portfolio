@@ -15,7 +15,18 @@ export const WorkCard = (props) => {
               <span className='text-2xl font-bold text-gray-600 tracking-wider'>
                 React JS Application
               </span>
-
+                    <div className='pt-8 text-center'>
+                        <a href='/'>
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-gray-700 font-bold text-lg'>
+                                Demo
+                            </button>
+                        </a>
+                        <a href='/'>
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-gray-700 font-bold text-lg'>
+                                Code
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
 
