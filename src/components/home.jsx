@@ -2,6 +2,9 @@ import React from "react";
 import man from '../assets/img/Maksim_Homepage.png'
 import {homeAboutText} from "../common/content-eng";
 import {homeGreetingsText} from "../common/content-eng";
+import linkedIn from "../assets/img/linkedin-logo.png";
+import gitHub from "../assets/img/github-logo.png";
+import email from "../assets/img/email-logo.png";
 
 
 export const Home = () => {
@@ -17,13 +20,34 @@ export const Home = () => {
                 className="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
             > </div>
             <div
-                className="hover:animate-spin absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+                className="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
             >
-
                 <span className="text-gray-600 animate-pulse">Front-end</span>
                 <p><span className="text-gray-600 animate-pulse">developer</span></p>
-            </div>
+                <div className="flex gap-2 py-28 w-1/4">
+                    <img
+                        src={linkedIn}
+                        className="w-1/6 cursor-pointer "
+                        alt=""
+                        // onClick={handleLinkedIn}
+                    />
+                <img
+                    src={gitHub}
+                    className="w-1/6 cursor-pointer"
+                    alt=""
+                    // onClick={handleLinkedIn}
+                />
+                    <img
+                        src={email}
+                        className="w-1/6 cursor-pointer"
+                        alt=""
+                        // onClick={handleLinkedIn}
+                    />
 
+
+
+                </div>
+            </div>
 
             <div
                 className="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
@@ -38,6 +62,7 @@ export const Home = () => {
                 >Hire Me</a
                 >
             </div>
+
 
 
         </div>
