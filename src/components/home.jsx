@@ -1,5 +1,7 @@
 import React from "react";
 import man from '../assets/img/Maksim_Homepage.png'
+import {homeAboutText} from "../common/content-eng";
+import {homeGreetingsText} from "../common/content-eng";
 
 
 export const Home = () => {
@@ -26,14 +28,9 @@ export const Home = () => {
             <div
                 className="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
             >
-                <h1 className="text-4xl font-bold text-indigo-900"> Greetings, I'm Maksim Tsyriulnikov</h1>
+                <h1 className="text-4xl font-bold text-indigo-900">{homeGreetingsText}</h1>
                 <p className="text-gray-400">
-                    I am a front-end developer with experience in creating SPA using React, Redux, TypeScript,
-                    JavaScript, SCSS, HTML with future plans to study AngularJS.
-                    I like mobile app development and currently improving my skills
-                    in React Native.
-                    I spend my spare-time learning English and Spanish.
-                    Open for your suggestions!
+                    {homeAboutText}
                 </p>
                 <a
                     className="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"

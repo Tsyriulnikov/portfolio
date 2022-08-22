@@ -22,7 +22,7 @@ export const Services = () => {
     ]
 
     return (
-        <div id="services" className="dark:bg-slate-900">
+        <div id="services" className="dark:bg-slate-900 py-40">
             <div className="container mx-auto">
                 <div className="flex flex-col gap-3 items-center">
                     <h1 className="text-indigo-600 font-bold">SERVICES</h1>
