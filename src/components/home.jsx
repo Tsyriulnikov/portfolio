@@ -16,13 +16,18 @@ export const Home = () => {
                 src={man}
                 alt=""
             />
-
+            <div
+                className="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
+            > </div>
+            <div
+                className="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+            >
                 <span className="text-gray-600 animate-pulse">Front-end</span>
                 <p><span className="text-gray-600 animate-pulse">developer</span></p>
                 <div className="flex gap-2 py-28 w-1/4">
                     <img
                         src={linkedIn}
-                        className="w-1/6 cursor-pointer "
+                        className="w-1/6 cursor-pointer "s
                         alt=""
                         // onClick={handleLinkedIn}
                     />
