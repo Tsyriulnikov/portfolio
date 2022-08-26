@@ -47,10 +47,7 @@ export const Navbar = () => {
                      className={isHamburgerActive ? "bg-white space-y-1 md:hidden cursor-pointer z-20" :
                          "space-y-1 md:hidden cursor-pointer z-20"}
                      onClick={handleHamburgerMenu}>
-                    <div className="w-6 h-0.5 bg-black"> </div>
-                    <div className="w-6 h-0.5 bg-black"> </div>
-                    <div className="w-6 h-0.5 bg-black"> </div>
-                </div>
+
                 <ul
                     id="menu"
                     className={isHamburgerActive ? "bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center" :
