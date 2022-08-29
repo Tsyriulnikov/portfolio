@@ -39,7 +39,8 @@ export const Services = () => {
                         return (
                             <div key={item.id}
                                  className="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-
+                                <img className="w-10" src={item.tech} alt="HTML icon"/>
+                                <h1 className="font-medium text-lg dark:text-white">{item.Title}</h1>
                                 <p className="text-gray-400">
                                     I specialize in creating interactive websites for individuals and
                                     small businesses.
