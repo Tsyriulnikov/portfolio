@@ -10,7 +10,15 @@ import Vue from '../assets/img/vue.png';
 
 export const Services = () => {
     const skills = [
-
+        {id: '1', tech: HTML, Title: 'HTML'},
+        {id: '2', tech: CSS, Title: 'CSS'},
+        {id: '3', tech: JavaScript, Title: 'JAVASCRIPT'},
+        {id: '4', tech: ReactImg, Title: 'REACT.JS'},
+        {id: '5', tech: GitHub, Title: 'GITHUB'},
+        {id: '6', tech: Node, Title: 'NODE JS'},
+        {id: '7', tech: Typescript, Title: 'TYPESCRIPT'},
+        {id: '7', tech: Vue, Title: 'VUE.JS'},
+        {id: '8', tech: ReactImg, Title: 'REACT NATIVE'},
     ]
 
     return (
