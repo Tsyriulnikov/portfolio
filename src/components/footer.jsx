@@ -18,7 +18,9 @@ export const Footer = () => {
                 >© 2022 Maksim Tsyriulnikov</span
                 >
                 <div className="flex gap-2">
-
+                    <img className="w-6 cursor-pointer" src={facebook} alt=""/>
+                    <img className="w-6 cursor-pointer" src={instagram} alt=""/>
+                    <img className="w-6 cursor-pointer" src={linkedin} alt=""/>
                 </div>
             </div>
         </div>
