@@ -7,21 +7,21 @@ export const WorkCard = (props) => {
         >
 
             <div
-                // style={{ backgroundImage: `url(${WorkImg})` }}
+
+                style={{ backgroundImage: `url(${props.item.image})`,backgroundSize:'contain'}}
                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
             >
-
                 <div className='opacity-0 group-hover:opacity-100 bg-blue-200'>
               <span className='text-2xl font-bold text-gray-600 tracking-wider'>
-                React JS Application
+                {props.item.title}
               </span>
                     <div className='pt-8 text-center'>
-                        <a href='/'>
+                          <a href={props.item.demoUrl} target='_blank'>
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-gray-700 font-bold text-lg'>
                                 Demo
                             </button>
                         </a>
-                        <a href='/'>
+                        <a href={props.item.codeUrl} target='_blank'>
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-300 text-gray-700 font-bold text-lg'>
                                 Code
                             </button>

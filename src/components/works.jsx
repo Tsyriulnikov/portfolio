@@ -1,6 +1,6 @@
 import React from 'react'
-import item from '../assets/img/item.png'
 import {WorkCard} from "./WorkCard";
+import {projects, worksText} from "../common/content-eng";
 
 export const Works = () => {
     return (
@@ -11,23 +11,12 @@ export const Works = () => {
                     <h1 className="text-indigo-600 font-bold">PORTFOLIO</h1>
                     <h1 className="text-3xl dark:text-white">Works & Projects</h1>
                     <p className="w-1/2 text-center text-gray-400">
-                        I help designers, small agencies and businesses bring their ideas to
-                        life. Powered by Figma, VS Code and coffee, I turn your requirements
-                        into a well-designed websites
+                        {worksText}
                     </p>
                 </div>
 
                 <div className="p-5 sm:p-0 flex flex-wrap justify-between">
-
-                    <WorkCard/>
-
-                    {/*<div*/}
-                    {/*    className="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"*/}
-                    {/*>*/}
-                    {/*    <img src={item} alt={''}/>*/}
-                    {/*</div>*/}
-
-
+                    {projects.map((item)=><WorkCard item={item}/>)}
                 </div>
             </div>
         </div>

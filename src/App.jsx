@@ -8,7 +8,7 @@ import {Footer} from "./components/footer";
 
 function App() {
     return (
-        // <div className='h-48 max-h-fit bg-amber-600'>
+
         <div className='h-screen'>
             <Navbar/>
             <Home/>

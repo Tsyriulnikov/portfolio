@@ -1,11 +1,11 @@
 import React from "react";
-import man from '../assets/img/Maksim_Homepage.png'
+import man from '../assets/img/mini_Maksim_Homepage.png'
 import {homeAboutText} from "../common/content-eng";
 import {homeGreetingsText} from "../common/content-eng";
 import linkedIn from "../assets/img/linkedin-logo.png";
 import gitHub from "../assets/img/github-logo.png";
 import email from "../assets/img/email-logo.png";
-
+import {Link} from 'react-scroll';
 
 export const Home = () => {
     return (
@@ -25,26 +25,32 @@ export const Home = () => {
                 <span className="text-gray-600 animate-pulse">Front-end</span>
                 <p><span className="text-gray-600 animate-pulse">developer</span></p>
                 <div className="flex gap-2 py-28 w-1/4">
+                    <div className="w-full">
+                    <a href='https://www.linkedin.com/in/maksim-tsyriulnikov-a36115161/' target='_blank' rel="noreferrer">
                     <img
                         src={linkedIn}
-                        className="w-1/6 cursor-pointer "s
-                        alt=""
-                        // onClick={handleLinkedIn}
+                        className="w-1/6 cursor-pointer "
+                        alt="LinkedIn"
                     />
-                <img
-                    src={gitHub}
-                    className="w-1/6 cursor-pointer"
-                    alt=""
-                    // onClick={handleLinkedIn}
-                />
+                    </a>
+                    </div>
+                    <a href='https://github.com/Tsyriulnikov' target='_blank' rel="noreferrer">
+                       <img
+                            src={gitHub}
+                            className="w-1/6 cursor-pointer"
+                            alt="gitHub"
+                        />
+                    </a>
+
+                    <Link to={'contact'} smooth={true} duration={500}>
                     <img
                         src={email}
                         className="w-1/6 cursor-pointer"
-                        alt=""
+                        alt="email"
                         // onClick={handleLinkedIn}
                     />
 
-
+                    </Link>
 
                 </div>
             </div>
