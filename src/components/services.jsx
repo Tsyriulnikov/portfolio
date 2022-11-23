@@ -21,7 +21,7 @@ export const Services = () => {
                                 <img className="w-10" src={item.tech} alt="HTML icon"/>
                                 <h1 className="font-medium text-lg dark:text-white">{item.title}</h1>
                                 <p className="text-gray-400">
-                                    {item.descript}
+                                    {item.description}
                                 </p>
                             </div>
                         )

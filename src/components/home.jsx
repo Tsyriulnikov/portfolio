@@ -4,13 +4,11 @@ import {homeAboutText} from "../common/content-eng";
 import {homeGreetingsText} from "../common/content-eng";
 import linkedIn from "../assets/img/linkedin-logo.png";
 import gitHub from "../assets/img/github-logo.png";
-import email from "../assets/img/email-logo.png";
-import {Link} from 'react-scroll';
 
 export const Home = () => {
     return (
         <div id="home"
-            className='h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden'>
+             className='h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden'>
             <img
                 className="absolute bottom-0 right-0 lg:left-0 mx-auto h-4/5 object-cover"
                 src={man}
@@ -26,32 +24,24 @@ export const Home = () => {
                 <p><span className="text-gray-600 animate-pulse">developer</span></p>
                 <div className="flex gap-2 py-28 w-1/4">
                     <div className="w-full">
-                    <a href='https://www.linkedin.com/in/maksim-tsyriulnikov-a36115161/' target='_blank' rel="noreferrer">
-                    <img
-                        src={linkedIn}
-                        className="w-1/6 cursor-pointer "
-                        alt="LinkedIn"
-                    />
-                    </a>
+                        <a href='https://www.linkedin.com/in/maksim-tsyriulnikov-a36115161/' target='_blank'
+                           rel="noreferrer">
+                            <img
+                                src={linkedIn}
+                                className="w-full cursor-pointer "
+                                alt="LinkedIn"
+                            />
+                        </a>
                     </div>
-                    <a href='https://github.com/Tsyriulnikov' target='_blank' rel="noreferrer">
-                       <img
-                            src={gitHub}
-                            className="w-1/6 cursor-pointer"
-                            alt="gitHub"
-                        />
-                    </a>
-
-                    <Link to={'contact'} smooth={true} duration={500}>
-                    <img
-                        src={email}
-                        className="w-1/6 cursor-pointer"
-                        alt="email"
-                        // onClick={handleLinkedIn}
-                    />
-
-                    </Link>
-
+                    <div className="w-full">
+                        <a href='https://github.com/Tsyriulnikov' target='_blank' rel="noreferrer">
+                            <img
+                                src={gitHub}
+                                className="w-full cursor-pointer"
+                                alt="gitHub"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -68,7 +58,6 @@ export const Home = () => {
                 >Hire Me</a
                 >
             </div>
-
 
 
         </div>

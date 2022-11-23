@@ -1,8 +1,8 @@
 import React from 'react'
 
 import logo from '../assets/img/ship.png'
-import facebook from '../assets/img/github-logo.png'
-import linkedin from '../assets/img/linkedin-logo.png'
+import linkedIn from "../assets/img/linkedin-logo.png";
+import gitHub from "../assets/img/github-logo.png";
 
 
 export const Footer = () => {
@@ -16,9 +16,26 @@ export const Footer = () => {
                 <span className="hidden md:block font-medium text-white"
                 >© 2022 Maksim Tsyriulnikov</span
                 >
-                <div className="flex gap-2">
-                    <img className="w-6 cursor-pointer" src={facebook} alt=""/>
-                    <img className="w-6 cursor-pointer" src={linkedin} alt=""/>
+                <div className="w-16 flex gap-2">
+                    <div className="w-full">
+                        <a href='https://www.linkedin.com/in/maksim-tsyriulnikov-a36115161/' target='_blank'
+                           rel="noreferrer">
+                            <img
+                                src={linkedIn}
+                                className="w-full cursor-pointer "
+                                alt="LinkedIn"
+                            />
+                        </a>
+                    </div>
+                    <div className="w-full">
+                        <a href='https://github.com/Tsyriulnikov' target='_blank' rel="noreferrer">
+                            <img
+                                src={gitHub}
+                                className="w-full cursor-pointer"
+                                alt="gitHub"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

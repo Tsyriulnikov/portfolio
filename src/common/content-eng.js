@@ -7,6 +7,7 @@ import ReactImg from "../assets/img/react.png";
 import Node from "../assets/img/node.png";
 import Typescript from "../assets/img/ts.png";
 import Angular from "../assets/img/angular.png";
+import RxJS from "../assets/img/rxjs-logo.png";
 
 
 export const homeAboutText=' I am a front-end developer with experience in creating SPA using Angular, React, Redux, TypeScript,\n' +
@@ -21,19 +22,19 @@ export  const projects = [
     {title:'Store. Angular App',demoUrl:'https://store-angular-apps.herokuapp.com', codeUrl:'https://github.com/Tsyriulnikov/store-angular',image:imgProject1},
 ]
 export const skills = [
-    {id: '1', tech: Angular, title: 'Angular',descript:'Angular, RxJS, NGRX, NGXS, Akita, Elf, Material, PrimeNG'},
-    {id: '2', tech: ReactImg, title: 'React',descript:'React, Redux, React-hook-form, MaterialUI'},
-    {id: '3', tech: JavaScript, title: 'JAVASCRIPT',descript:'JavaScript, ES6'},
-    {id: '4', tech: CSS, title: 'CSS',descript:'CSS3'},
-    {id: '5', tech: Node, title: 'NODE JS',descript:'Sever'},
-    {id: '6', tech: Typescript, title: 'TYPESCRIPT',descript:'Types, Interface s, Generics'},
-    {id: '7', tech: HTML, title: 'HTML',descript:'HTML5'},
-    {id: '8', tech: ReactImg, title: 'REACT NATIVE',descript:'Mobile APP'},
+    {id: '1', tech: Angular, title: 'Angular',description:'Angular, RxJS, NGRX, NGXS, Akita, Elf, Material, PrimeNG'},
+    {id: '2', tech: RxJS, title: 'RxJS',description:'Reactive Extensions Library for JavaScript'},
+    {id: '3', tech: ReactImg, title: 'React',description:'React, Redux, React-hook-form, MaterialUI'},
+    {id: '4', tech: JavaScript, title: 'JAVASCRIPT',description:'JavaScript, ES6'},
+    {id: '5', tech: CSS, title: 'CSS',description:'CSS3'},
+    {id: '6', tech: Node, title: 'NODE JS',description:'Sever'},
+    {id: '7', tech: Typescript, title: 'TYPESCRIPT',description:'Types, Interface s, Generics'},
+    {id: '8', tech: HTML, title: 'HTML',description:'HTML5'},
+    {id: '9', tech: ReactImg, title: 'REACT NATIVE',description:'Mobile APP'},
 ]
 export const worksText = '\n' +
-    '                        There is both a good reason for that.\n' +
-    '                        I’m a creative problem-solver who wants to be part of a team that develops great branding campaigns.\n' +
-    '                        '
+    '                        I love clean and efficient code.\n' +
+    '                        My passion is to learn new technologies'
 export const servicesText ='There is both a good reason for that.\n' +
     '                        I’m a creative problem-solver who wants to be part of a team that develops great branding campaigns.\n' +
     '                        I pride myself on being able to think outside “normal” structures when it comes to designing new products.'
