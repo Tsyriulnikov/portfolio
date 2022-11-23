@@ -24,10 +24,10 @@ export const skills = [
     {id: '1', tech: Angular, title: 'Angular',descript:'Angular, RxJS, NGRX, NGXS, Akita, Elf, Material, PrimeNG'},
     {id: '2', tech: ReactImg, title: 'React',descript:'React, Redux, React-hook-form, MaterialUI'},
     {id: '3', tech: JavaScript, title: 'JAVASCRIPT',descript:'JavaScript, ES6'},
-    {id: '4', tech: CSS, title: 'SCSS',descript:'SCSS'},
+    {id: '4', tech: CSS, title: 'CSS',descript:'CSS3'},
     {id: '5', tech: Node, title: 'NODE JS',descript:'Sever'},
-    {id: '6', tech: Typescript, title: 'TYPESCRIPT',descript:'Types, Interfaces, Generics'},
-    {id: '7', tech: HTML, title: 'HTML',descript:'HTML'},
+    {id: '6', tech: Typescript, title: 'TYPESCRIPT',descript:'Types, Interface s, Generics'},
+    {id: '7', tech: HTML, title: 'HTML',descript:'HTML5'},
     {id: '8', tech: ReactImg, title: 'REACT NATIVE',descript:'Mobile APP'},
 ]
 export const worksText = '\n' +
