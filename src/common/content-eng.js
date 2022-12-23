@@ -1,5 +1,6 @@
 import imgProject1 from "../assets/img/mini_bizon.png"
 import imgProject2 from "../assets/img/mini_screenCards.png"
+import imgProject3 from "../assets/img/mini_pokeapi.png"
 import HTML from "../assets/img/html.png";
 import CSS from "../assets/img/css.png";
 import JavaScript from "../assets/img/javascript.png";
@@ -17,9 +18,9 @@ export const homeAboutText=' I am a front-end developer with experience in creat
     '                    Open for your suggestions!'
 export const homeGreetingsText = 'Greetings, I\'m Maksim Tsyriulnikov'
 export  const projects = [
-    {title:'Store. Angular SPA',demoUrl:'https://store-angular-apps.herokuapp.com', codeUrl:'https://github.com/Tsyriulnikov/store-angular',image:imgProject1},
+    {title:'Store. Angular SPA',demoUrl:'https://store-angular-q.firebaseapp.com', codeUrl:'https://github.com/Tsyriulnikov/store-angular',image:imgProject1},
     {title:'Cards. React SPA',demoUrl:'https://tsyriulnikov.github.io/cards_incubator/', codeUrl:'https://github.com/Tsyriulnikov/cards_incubator',image:imgProject2},
-    {title:'Store. Angular App',demoUrl:'https://store-angular-apps.herokuapp.com', codeUrl:'https://github.com/Tsyriulnikov/store-angular',image:imgProject1},
+    {title:'Store. Angular App',demoUrl:'https://pokeapi-b28eb.firebaseapp.com', codeUrl:'https://github.com/Tsyriulnikov/pokeapi-angular',image:imgProject3},
 ]
 export const skills = [
     {id: '1', tech: Angular, title: 'Angular',description:'Angular, RxJS, NGRX, NGXS, Akita, Elf, Material, PrimeNG'},
@@ -27,7 +28,7 @@ export const skills = [
     {id: '3', tech: ReactImg, title: 'React',description:'React, Redux, React-hook-form, MaterialUI'},
     {id: '4', tech: JavaScript, title: 'JAVASCRIPT',description:'JavaScript, ES6'},
     {id: '5', tech: CSS, title: 'CSS',description:'CSS3'},
-    {id: '6', tech: Node, title: 'NODE JS',description:'Sever'},
+    {id: '6', tech: Node, title: 'NODE JS',description:'Server'},
     {id: '7', tech: Typescript, title: 'TYPESCRIPT',description:'Types, Interface s, Generics'},
     {id: '8', tech: HTML, title: 'HTML',description:'HTML5'},
     {id: '9', tech: ReactImg, title: 'REACT NATIVE',description:'Mobile APP'},
